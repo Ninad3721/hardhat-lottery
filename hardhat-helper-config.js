@@ -9,12 +9,12 @@ const networkconfig = {
         gas_lane: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15",
         callbackGasLimit: "500000",
         interval: "30",
-        subscriptionId: "7579"
+        subscriptionId: "7901"
     },
     31337:
     {
         name: "localhost",
-        subscriptionId: "7579",
+        subscriptionId: "7901",
         entranceFee: ethers.utils.parseEther("0.01"),
         gas_lane: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15",
         callbackGasLimit: "500000",

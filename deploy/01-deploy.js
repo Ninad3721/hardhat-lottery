@@ -10,7 +10,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deployer } = await getNamedAccounts()
     const chainId = network.config.chainId
     let VRFCoordinatorV2address, subscriptionId,VRFCoordinatorV2Mocks
-    if (development.includes(network.config.chainId)) {
+    if (development.includes(network.name)) {
         console.log("ChainId = 31337 is true")
         VRFCoordinatorV2Mocks = await ethers.getContract("VRFCoordinatorV2Mock")
         VRFCoordinatorV2address = VRFCoordinatorV2Mocks.address
@@ -20,7 +20,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         await VRFCoordinatorV2Mocks.fundSubscription(subscriptionId, FUND_AMOUNT)
     }
     else {
-        VRFCoordinatorV2address = await networkconfig[chainId]["VRFCoordinatorV2"]
+        VRFCoordinatorV2address =  networkconfig[chainId]["VRFCoordinatorV2"]
         subscriptionId = networkconfig[chainId]["subscriptionId"]
 
     } 

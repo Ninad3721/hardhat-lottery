@@ -10,13 +10,13 @@ module.exports = {
   {
     goerli:
     {
-      url: process.env.GOERLI_RPC_URL,
+      url: "https://eth-goerli.g.alchemy.com/v2/DUMqftJofufvzIoxXLk46iSMnA_zymBx",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
       chainId: 5,
     },
     mainnet:
     {
-      url: process.env.MAINET_RPC_URL,
+      url: "https://eth-mainnet.g.alchemy.com/v2/ZlZhkMbMMEKrEM2Wxb0oiFtceOEWcEbQ",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
       chainId: 1,
 

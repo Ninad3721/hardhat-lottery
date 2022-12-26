@@ -1,0 +1,23 @@
+{
+  "name": "hardhat-lottery-frontend-2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.1",
+    "@nomicfoundation/solidity-analyzer": "^0.1.0",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.1.1",
+    "moralis": "^2.10.3",
+    "next": "13.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-moralis": "^1.4.2",
+    "web3uikit": "^1.0.4"
+  }
+}
